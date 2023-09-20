@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+#introScreen{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#start, #restart{
+    background-color: purple;
+    padding: 3rem;
+    color: white;
+}
+
+#gameDiv, #gameOverScreen{
+    display: none;
+    overflow: hidden;
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameScreen{
+    overflow: hidden;
+    background-image: url('./images/road.png');
+    background-size: contain;
+    background-position: center;
+    animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 -1000px;
+  }
+  95% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 50px;
+  }
+}
